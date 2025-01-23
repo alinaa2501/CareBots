@@ -1,0 +1,17 @@
+<svg width="1284" height="655" viewBox="0 0 1284 655" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="5" /> <!-- Blur the shadow -->
+            <feOffset dx="0" dy="4" result="offsetblur" /> <!-- Offset the shadow -->
+            <feFlood flood-color="rgba(0, 0, 0, 0.5)" /> <!-- Color of the shadow -->
+            <feComposite in2="offsetblur" operator="in" /> <!-- Composite shadow with blur -->
+            <feMerge>
+                <feMergeNode /> <!-- Merge the shadow with the original graphic -->
+                <feMergeNode in="SourceGraphic" /> <!-- Include the original graphic -->
+            </feMerge>
+        </filter>
+    </defs>
+    <g filter="url(#shadow)">
+        <path d="M398 0H880C880 0 849.364 349.88 613.949 498.44C378.534 647 0 647 0 647V0Z" fill="#CBAACB"/>
+    </g>
+</svg>

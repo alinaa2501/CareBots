@@ -1,0 +1,97 @@
+body {
+    background-color: var(--cb-offwhite);
+    font-weight:400 !important;
+}
+.contact-card img {
+    width: 4.6875rem;
+    height: 4.6875rem;
+}
+
+.contact-card {
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-style: solid;
+}
+
+#contact-card-section {
+    padding-bottom: 65px;
+}
+
+#contact-card-section h1 {
+    font-weight: 500;
+}
+
+#response-section h2 {
+    padding-top: 4.7rem;
+    padding-bottom: 4.7rem;
+    font-size: 2rem;
+}
+
+.response-card {
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: var(--cb-blue);
+    border-radius: 20px;
+    padding-top: 2rem;
+}
+
+
+.messageinput {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 15rem;
+    border-radius: 7px;
+}
+
+.response-heading-mobile {
+    align-content: end;
+}
+
+.response-field {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+}
+
+.btn-neemcontactop {
+    font-size: 1rem;
+    border-radius: 15px;
+    min-width: 10rem;
+    color: var(--cb-black);
+}
+
+h1, h2, .form-label, .btn-neemcontactop {
+    color: var(--cb-black);
+    font-weight:400;
+}
+
+.card-title {
+    font-size: 1.6rem;
+    color: #4a4a4a; 
+    font-weight: 400;
+}  
+
+label, a {
+    font-size: 1.1rem;
+}
+
+h2 {
+    font-size: 0.9rem;
+}
+
+/* Media queries om bepaalde elementen te verbergen of juist weer te geven op mobiel */
+@media screen and (max-width: 766px) {
+    .hidden-on-mobile {
+        display: none;
+    }
+
+    .card-group {
+        gap: 50px;
+    }
+
+    .shown-only-on-mobile p {
+        color: #4a4a4a;
+    }
+}
+
+@media screen and (min-width:767px) {
+    .shown-only-on-mobile {
+        display: none;
+    }
+}

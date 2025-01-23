@@ -1,0 +1,32 @@
+h1 {
+    font-weight: 500;
+    font-size: 2.5rem;
+}     
+
+*, h2{
+    color: #4a4a4a; 
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+ul li,p {
+    font-size: 1.1rem;
+}
+
+body {
+    background-color: #F4F4F4;
+}
+
+.blue-section {  
+    background-color: #B0CAEF;
+}
+        
+.custom-image {
+    width: 100%;
+    height: auto;
+}
+
+

@@ -1,0 +1,135 @@
+/* BASIC */
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+}
+
+/* VARIABLES */
+:root {
+    --cb-blue: #B0CAEF;
+    --cb-offwhite: #f4f4f4;
+    --cb-white: #fdfdfd;
+    --cb-green: #a8e6cf;
+    --cb-pink: #cbaacb;
+    --cb-black: #4a4a4a;
+}
+
+/* navbar */
+.navbar-links-style{
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Roboto Slab";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.navbar-links-style:hover{
+    color: #fff;
+}
+
+
+/* style voor offcanvas menu */
+.navbar-links-offcanvas-style{
+    color: #4A4A4A;
+    font-family: "Roboto Slab";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* replaces the mobile nav toggeler button icon with a white version instead of a black one */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")!important;
+}
+.navbar-toggler {
+    border-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+/* Overwrite standard bootstrap styling when nav toggeler button is pressed */
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-color: white;
+}
+/* Overwrite standard bootstrap styling when nav link is pressed */
+.nav-link:focus, .nav-link:hover {
+    color: lightgrey;
+}
+.nav-link.active{
+    text-decoration: underline;
+    color: var(--cb-blue)!important;
+}
+
+.btn.nav-link.active {
+    color: var(--cb-black)!important;
+    background-color: var(--cb-green);
+    box-shadow: inset 1px 2px 5px #777;
+    text-decoration: none;
+}
+  
+/* style voor de offcanvas header tekst */
+.offcanvas-header {
+    border-bottom: 1px solid #ddd;
+    font-family: "Roboto Slab";
+    font-size: 25px;
+    color: #4A4A4A;
+}
+   
+/* geeft de navbar op de homepage een zwarte achtergrond gradient en zorgt er voor dat de navbar boven de hero image komt te staan */
+.primary-navbar{
+    z-index: 10; 
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.20) 0%, rgba(0,0,0,0) 100%); 
+}
+
+/* geeft de navbar een achtergrond gradient en zorgt er voor dat de navbar boven de hero image komt te staan */
+.secondary-navbar{
+    z-index: 10; 
+    background: linear-gradient(289deg, #6B92CA 3.83%, #6B92CA 36.81%, #B0CAEF 65.16%, #CBAACB 89.46%, #A8E6CF 106.7%),linear-gradient(289deg, #655565 -9.02%, #BB9DBB 30.21%, #CBAACB 49.54%, #B0CAEF 69.79%, #A8E6CF 91.2%), linear-gradient(289deg, #655565 -9.02%, #A8E6CF 8.46%, #A8E6CF 28.71%, #B0CAEF 48.96%, #CBAACB 106.7%);
+}
+
+.sticky-navbar-transparent {
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.sticky-navbar-transparent:hover {
+    opacity: 1;
+}
+
+/* BUTTONS */
+
+.btn {
+    background-color: var(--cb-green);
+    color: var(--cb-black);
+    font-family: 'Roboto Slab';
+    font-size: 1.7rem;
+    font-weight: 400;
+    border-radius: 13px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+.btn:hover, .btn:focus, .btn:active{
+    background-color: #91d6bd!important;
+    border-color: #91d6bd!important;
+    color: #fff!important;
+}
+.contact-container{
+    background-color: #B0CAEF;
+}
+
+.contact-banner {
+
+
+    .btn {
+        font-size: 1rem;
+        color: var(--cb-black);
+        text-wrap: nowrap;
+    }
+}

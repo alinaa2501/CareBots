@@ -1,0 +1,234 @@
+
+/* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */ 
+
+/* SM: portrait phones, less than 576.98px */
+@media (max-width: 575.98px) {
+    
+    .hero-section {
+        background-size: 120vw;
+        background-position: center +260px, center;
+    }
+
+    .mission-section {
+        background-size: 140vw;
+    }
+    
+
+    .product-section img {
+        height: 60vw;
+    }
+
+    /* SM: FONT SIZES */ 
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    p {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        font-size: 1.3rem;
+    }
+
+    /* CONTACT FORM */
+    .contact-section input {
+        width: 70vw;
+    }
+    
+    .font-form {
+        font-size: 1.1rem;
+    }
+
+    
+}
+
+/* MD: landscape phones, greater then 575.99 and less than 767.98px */
+@media screen and (min-width: 575.99px) and (max-width: 767.98px) {
+
+    /* MD: PRODUCT/ CONTACT SECTION */
+    
+}
+
+/* LG: tablets, greater then 767.99 and less than 991.98px */
+@media screen and (min-width: 767.99px) and (max-width: 991.98px) {
+   
+    .hero-section {
+        background-size: 120vw;
+        background-position: center +260px, center;
+    }
+
+    .product-section img {
+        block-size: 40vw;
+    }
+
+    /* CONTACT FORM */
+    .contact-section input {
+        width: 70vw;
+    }
+
+}
+
+/* XL: desktops, greater then 991.99 and less than 1199.98px */
+@media screen and (min-width: 991.99px) and (max-width: 1199.98px) {
+
+    .hero-section {
+        background-size: 110vw;
+        background-position: center +260px, center;
+    }
+
+    /* XL: FONT SIZES */ 
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 2.2rem;
+    }
+    
+    p {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        font-size: 1.7rem;
+    }
+
+    .product-section img {
+        block-size: 30vw;
+    }
+
+    /* CONTACT FORM */
+    .contact-section input {
+        width: 70vw;
+    }
+    
+    .contact-section textarea {
+        height: 20vh;
+    }
+    
+    .font-form {
+        font-size: 1.2rem;
+    }
+    
+
+}
+
+/* XXL: large desktops, greater than 1199.99px */
+@media screen and (min-width:1199.99) {
+
+}
+/* MOBILE LANDSCAPE: mobile phones, less then 1000px and in landscape orientation */
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+    .hero-section {
+        background-size: 110vw;
+        background-position: center +10px, center;
+        min-height: 160vh;  
+    }
+
+    .mission-section,
+    .product-section,
+    .contact-section {
+        min-height: 140vh;
+    }
+
+    /* Mobile landscape: FONT SIZES */ 
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1.4rem;
+    }
+
+    .product-section img {
+        block-size: 20vw;
+    }
+
+    /* CONTACT FORM */
+    .font-form {
+        font-size: 1rem;
+    }
+}
+
+/* IPAD PRO: target ipad pro with higher DPI */
+/* @media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .hero-section {
+        background-size: 100vw;
+        background-position: center +210px, center;
+          
+    }
+
+    .mission-section,
+    .product-section,
+    .contact-section {
+        height: 100vh;
+    } */
+
+    /* IPAD PRO: FONT SIZES */ 
+    /* h1 {
+        font-size: 4.5rem;
+    }
+    
+    h2 {
+        font-size: 3rem;
+    }
+    
+    p {
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 2.5rem;
+    }
+
+    .product-section img {
+        block-size: 50vw;
+    }
+  } */
+
+    /* IPHONE SE: very small smartphones, less than 378px */
+@media screen and (max-width:378px) {
+    .hero-section {
+        background-size: 100vw;
+        background-position: center +210px, center;
+        padding-top: 100px;
+    }
+ 
+    /* IPHONE SE: FONT SIZES */ 
+    h1 {
+        font-size: 2.3rem;
+    }
+    
+    h2 {
+        font-size: 1.1rem;
+    }
+    
+    p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    /* CONTACT FORM */
+    .font-form {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,362 @@
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--cb-black);
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--cb-black);
+}
+
+
+/* HERO SECTION */ /* HERO SECTION */ /* HERO SECTION */ /* HERO SECTION */ /* HERO SECTION */ /* HERO SECTION */
+
+.hero-section{
+    position: relative; 
+    background: 
+        url(../images/hero-transp.png),
+        linear-gradient(90deg, #567ba7, white);
+    background-repeat: no-repeat;  
+    background-size: cover;  
+    background-position: center;
+    height: 100vh;
+    color: var(--cb-white);
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section .row {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    justify-content: flex-end; /* Ensure items align at the bottom */
+    margin-bottom: 15vh;
+    min-width: 0; /* Reset min-width to prevent alignment issues */
+}
+
+.row-height {
+    min-height: 100vh;
+}
+
+.h1-hero {
+    letter-spacing: 1px;
+}
+
+.addbg {
+    background-color: #4A4A4A;
+}
+
+/* MISSION SECTION */ /* MISSION SECTION */ /* MISSION SECTION */ /* MISSION SECTION */ /* MISSION SECTION */ /* MISSION SECTION */ 
+
+.mission-section {
+    min-height: 100vh;
+    position: relative;
+    background: 
+        url(../images/pink-circle.svg),
+        linear-gradient(90deg, #d8d8d8, var(--cb-offwhite)); 
+    background-repeat: no-repeat;  
+    background-size: contain;
+    background-position: top left;
+}
+
+.mission-section img {
+    block-size: 60px;
+}
+
+
+.bg-blue {
+    background-color: var(--cb-blue);
+    border-radius: 25px;
+}
+
+/* PRODUCT SECTION */ /* PRODUCT SECTION */ /* PRODUCT SECTION */ /* PRODUCT SECTION */ /* PRODUCT SECTION */ /* PRODUCT SECTION */
+
+.product-section {
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient(90deg, #d8d8d8, var(--cb-offwhite)); 
+}
+
+.product-section img {
+    height: 450px;
+}
+
+.product-desc {
+    background-color: var(--cb-white);
+    border-radius: 25px;
+    display: flex;
+    
+}
+
+ul li {
+    font-size: 1.2rem;
+    color: var(--cb-black);
+    font-weight: 400;
+    
+}
+
+/* CONTACT SECTION */ /* CONTACT SECTION */ /* CONTACT SECTION */ /* CONTACT SECTION */ /* CONTACT SECTION */ /* CONTACT SECTION */ 
+
+.contact-section {
+    min-height: 100vh;
+    /* background-color: var(--cb-blue); */
+    background: linear-gradient(90deg,  #6a90be, #B0CAEF); 
+    position: relative;
+}
+
+
+
+
+
+.contact-section textarea {
+    height: 20vh;
+}
+
+.font-form {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--cb-black);
+
+}
+
+/* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */ 
+
+/* SM: portrait phones, less than 576.98px */
+@media (max-width: 575.98px) {
+    
+    .hero-section {
+        background-size: 120vw;
+        background-position: center +260px, center;
+    }
+
+    .mission-section {
+        background-size: 140vw;
+    }
+    
+
+    .product-section img {
+        height: 60vw;
+    }
+
+    /* SM: FONT SIZES */ 
+    
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    p {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        font-size: 1.3rem;
+    }
+
+    /* CONTACT FORM */
+    .contact-section input {
+        width: 100%; 
+    }
+    
+    .font-form, ul li {
+        font-size: 1.1rem;
+    }
+
+    
+}
+
+/* MD: landscape phones, greater then 575.99 and less than 767.98px */
+@media screen and (min-width: 575.99px) and (max-width: 767.98px) {
+
+    /* MD: PRODUCT/ CONTACT SECTION */
+    
+}
+
+/* LG: tablets, greater then 767.99 and less than 991.98px */
+@media screen and (min-width: 767.99px) and (max-width: 991.98px) {
+   
+    .hero-section {
+        background-size: 120vw;
+        background-position: center +260px, center;
+    }
+
+    .product-section img {
+        block-size: 40vw;
+    }
+
+    /* CONTACT FORM */
+    .contact-section input {
+        width: 70vw; !important
+    }
+
+}
+
+/* XL: desktops, greater then 991.99 and less than 1199.98px */
+@media screen and (min-width: 991.99px) and (max-width: 1199.98px) {
+html{ font-size: 10px; }
+    .hero-section {
+        background-size: 110vw;
+        background-position: center +260px, center;
+    }
+
+    /* XL: FONT SIZES */ 
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    h2, .btn {
+        font-size: 2.5rem;
+    }
+    
+    ul li, p, label {
+        font-size: 1.7rem;
+    }
+
+    .product-section img {
+        block-size: 30vw;
+    }
+
+    /* CONTACT FORM */
+    .contact-section input {
+        width: 70vw;
+    }
+    
+    .contact-section textarea {
+        height: 20vh;
+    }
+    
+    .font-form {
+        font-size: 1.7rem;
+    }
+    
+
+}
+
+/* XXL: large desktops, greater than 1199.99px */
+@media screen and (min-width: 1199.99px) {
+    .contact-section input {
+        width: 25vw;
+    }
+}
+/* MOBILE LANDSCAPE: mobile phones, less then 1000px and in landscape orientation */
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+    .hero-section {
+        background-size: 110vw;
+        background-position: center +10px, center;
+        min-height: 160vh;  
+    }
+
+    .mission-section,
+    .product-section,
+    .contact-section {
+        min-height: 140vh;
+    }
+
+    /* Mobile landscape: FONT SIZES */ 
+    /* h1 {
+        font-size: 3.5rem;
+    }
+    
+    h2, .btn {
+        font-size: 2.5rem;
+    }
+    
+    ul li, p, label {
+        font-size: 1.7rem;
+    }
+
+    .product-section img {
+        block-size: 30vw;
+    } */
+
+    /* CONTACT FORM */
+    .font-form {
+        font-size: 1rem;
+    }
+
+
+}
+
+/* IPAD PRO: target ipad pro with higher DPI */
+@media only screen 
+  and (min-device-width: 1023px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .hero-section {
+        background-size: 100vw;
+        background-position: center +210px, center;
+          
+    }
+
+    .mission-section,
+    .product-section,
+    .contact-section {
+        height: 100vh;
+    } */
+
+    /* IPAD PRO: FONT SIZES */ 
+    /* h1 {
+        font-size: 9.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    p {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .btn {
+        font-size: 1.8rem;
+    }
+
+    ul li {
+        font-size: 1.2rem;
+        font-weight: 400;
+    } */
+
+    .product-section img {
+        block-size: 40vw;
+    }
+
+    
+  }
+
+    /* IPHONE SE: very small smartphones, less than 378px */
+@media screen and (max-width:378px) {
+    .hero-section {
+        background-size: 100vw;
+        background-position: center +210px, center;
+        padding-top: 100px;
+    }
+ 
+    /* IPHONE SE: FONT SIZES */ 
+    h1 {
+        font-size: 2.3rem;
+    }
+    
+    h2 {
+        font-size: 1.1rem;
+    }
+    
+    p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    /* CONTACT FORM */
+    .font-form {
+        font-size: 0.9rem;
+    }
+}

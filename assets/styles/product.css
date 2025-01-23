@@ -1,0 +1,99 @@
+/* 
+/* PRODUCT PAGE *//* PRODUCT PAGE *//* PRODUCT PAGE *//* PRODUCT PAGE *//* PRODUCT PAGE *//* PRODUCT PAGE *//* PRODUCT PAGE *//* PRODUCT PAGE *//* PRODUCT PAGE *//* PRODUCT PAGE *//* PRODUCT PAGE *//* PRODUCT PAGE *//* PRODUCT PAGE *//* PRODUCT PAGE */
+.info{
+    background-color: rgb(203, 170, 203, 80%);
+}
+
+* {
+    color: #4A4A4A; 
+}
+
+ul li, p {
+    font-size: 1.1rem ;
+    font-weight: 400;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 2.5rem;
+}    
+
+body {
+    background-color: #f4f4f4;
+}
+
+#product .product-container {
+    margin: 0 auto;
+    max-width: 1440px;
+    display: grid;
+    justify-content: center;
+    gap: 15px;
+    box-sizing: border-box;
+
+    h1 {
+        text-align: center;
+    }
+
+    .button-wrapper {
+        text-align: center;
+
+        button {
+            font-size: 30px;
+        }
+    }
+    
+    .btn {
+        color: #4a4a4a;
+    }
+
+    @media (min-width: 900px) {
+        grid-template:
+            "title title"
+            "image card1"
+            "button card1"
+            "card2 card2"/ 60% 40%;
+            gap: 20px;
+
+        h1 {
+            grid-area: title;
+        }
+
+        img {
+            grid-area: image;
+        }
+
+        .card:first-of-type {
+            grid-area: card1;
+        }
+
+        .card:last-of-type {
+            grid-area: card2;
+        }
+
+        .button-wrapper {
+            grid-area: button;
+
+            button {
+                font-size: 35px;
+                width: 263px;
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        grid-template:
+            "title title" 
+            "image card1"
+            "image card2"
+            "button card2"
+            1fr / 40% 50%;
+            gap: 10px 95px;
+
+        .button-wrapper {
+            padding-top: 40px;
+        }
+    }
+}
+
+
+/* PRODUCT PAGE *//* PRODUCT PAGE *//* PRODUCT PAGE *//* PRODUCT PAGE *//* PRODUCT PAGE *//* PRODUCT PAGE *//* PRODUCT PAGE *//* PRODUCT PAGE *//* PRODUCT PAGE *//* PRODUCT PAGE *//* PRODUCT PAGE *//* PRODUCT PAGE *//* PRODUCT PAGE *//* PRODUCT PAGE */PRODUCT PAGE */
